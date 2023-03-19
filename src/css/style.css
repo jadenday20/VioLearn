@@ -1,0 +1,24 @@
+:root {
+  --font-headline: 'Caveat Brush', cursive, Helvetica, sans-serif;
+  --font-body: 'Lato', sans-serif;
+  /* colors */
+  --primary-color: #885A89;
+  --secondary-color: #A1CF6B;
+  --light-grey: #CBCBD4;
+  --dark-green: #3F612D;
+  --dark-purple: #160F29;
+
+
+  /* sizes */
+  --font-base: 18px;
+  --small-font: 0.8em;
+  --large-font: 1.2em;
+}
+
+body{
+  font-family: var(--font-body);
+}
+
+h1, h2{
+  font-family: var(--font-headline);
+}
