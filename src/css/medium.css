@@ -1,0 +1,24 @@
+@media (min-width:600px) {
+    body {
+        max-width: 800px;
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    footer {
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+    }
+    main {
+        margin: 0 2em;
+    }
+    nav{
+        min-width: 60%;
+    }
+
+}
