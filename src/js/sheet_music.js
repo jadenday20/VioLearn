@@ -1,12 +1,5 @@
 import ExternalServices from "./ExternalServices.mjs";
-import { renderListWithTemplate } from "./utils.mjs";
-
-const sheet_music = document.getElementById("sheet_music");
 const baseURL = "/json/sheet_music.json";
-
-function displayMusic(song){
-
-}
 
 const services = new ExternalServices(baseURL);
 
@@ -22,7 +15,7 @@ function displaySongs(song){
     const sheet_musicHTML = document.getElementById("sheet_music");
     const newSheetMusic = document.createElement("li");
     const link = document.createElement("a");
-    link.href = "/sheet_music/";
+    link.href = `/songs/index.html?song=${song.ID}`;
     newSheetMusic.classList.add("song");
     link.textContent = song.name;
     newSheetMusic.appendChild(link)

@@ -2,35 +2,40 @@
     "sheet_music": [
       {
         "name": "Fall is Coming",
-        "audioFiles": [],
+        "ID": 1,
+        "audioFiles": [["FIC1-violin1-count","FIC1-violin2-count","FIC1-both-count"], ["FIC2-violin1-count","FIC2-violin2-count","FIC2-both-count","FIC-full-song-violin1-count","FIC-full-song-violin2-count","FIC-full-song-both-count"]],
         "videoFiles": [],
-        "files": ["Fall_is_Coming", "Fall_is_Coming_2"],
+        "files": ["Fall_is_Coming_1", "Fall_is_Coming_2"],
         "notes": ""
       },
       {
         "name": "Fiddle Song",
-        "audioFiles": [],
+        "ID": 2,
+        "audioFiles": [[]],
         "videoFiles": [],
         "files": ["Fiddle_Song"],
         "notes": ""
       },
       {
         "name": "I am a Child of God",
-        "audioFiles": [],
+        "ID": 3,
+        "audioFiles": [["I_am_a_Child_of_God", "Child_of_God_Violin_counting", "Child_of_God_Piano_counting"], [], []],
         "videoFiles": [],
         "files": ["I_am_a_Child_of_God_Both", "I_am_a_Child_of_God_Violin1", "I_am_a_Child_of_God_Violin2"],
         "notes": ""
       },
       {
         "name": "Go the Distance",
-        "audioFiles": [],
+        "ID": 4,
+        "audioFiles": [["go_the_distance"]],
         "videoFiles": [],
         "files": ["Go_the_Distance"],
         "notes": ""
       },
       {
         "name": "The Round Song",
-        "audioFiles": [],
+        "ID": 5,
+        "audioFiles": [["The_Round_Song"]],
         "videoFiles": [],
         "files": ["The_Round_Song"],
         "notes": ""
