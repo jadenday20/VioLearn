@@ -1,14 +1,13 @@
 :root {
-  --font-headline: 'Caveat Brush', cursive, Helvetica, sans-serif;
-  --font-body: 'Lato', sans-serif;
+  --font-headline: "Caveat Brush", cursive, Helvetica, sans-serif;
+  --font-body: "Lato", sans-serif;
   /* colors */
-  --primary-color: #551A8B;
+  --primary-color: #551a8b;
   --primary-hover: #652b9b;
-  --secondary-color: #A1CF6B;
-  --light-grey: #CBCBD4;
-  --dark-green: #3F612D;
-  --dark-purple: #160F29;
-
+  --secondary-color: #a1cf6b;
+  --light-grey: #cbcbd4;
+  --dark-green: #3f612d;
+  --dark-purple: #160f29;
 
   /* sizes */
   --font-base: 18px;
@@ -27,17 +26,17 @@ html, body {
 }
 
 #content-wrap {
-  padding-bottom: 4em;    /* Footer height */
+  padding-bottom: 4em; /* Footer height */
 }
 
-body{
+body {
   font-family: var(--font-body);
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-main{
+main {
   padding: 1em;
 }
 
@@ -45,7 +44,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, #title{
+h1,
+h2,
+#title {
   font-family: var(--font-headline);
   color: var(--primary-color);
 }
@@ -79,20 +80,21 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 4em;            /* Footer height */
+  height: 4em; /* Footer height */
   text-align: center;
   color: var(--primary-color);
   font-family: var(--font-headline);
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   padding-inline-start: 0;
 }
 
-nav li, .account {
+nav li,
+.account {
   background-color: var(--primary-color);
   border-radius: 8px;
   /* padding: .7em;
@@ -100,19 +102,21 @@ nav li, .account {
   display: inline-block;
 }
 
-nav li:hover, .account:hover {
+nav li:hover,
+.account:hover {
   background-color: var(--primary-hover);
 }
 
-nav a, .account {
+nav a,
+.account {
   color: white;
   display: block;
-  padding: .7em;
+  padding: 0.7em;
   width: 90px;
   line-height: 25px;
   text-align: center;
 }
-nav a{
+nav a {
   margin: auto;
 }
 
@@ -138,12 +142,12 @@ nav ul {
 nav li {
   text-align: center;
   width: 80%;
-  margin: .5em auto;
+  margin: 0.5em auto;
 }
-.toggleOff{
+.toggleOff {
   display: none;
 }
-.toggleTransparent{
+.toggleTransparent {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -169,13 +173,13 @@ nav li {
   text-align: center;
 }
 
-input[type=submit] {
+input[type="submit"] {
   cursor: pointer;
   background-color: var(--primary-color);
   border-radius: 8px;
   color: white;
   display: block;
-  padding: .1em;
+  padding: 0.1em;
   width: 75px;
   line-height: 25px;
   margin: 1em auto 0 auto;

@@ -1,6 +1,8 @@
-{"accounts":[
-    { "name":"Jaden", "Password":"violin" },
-    { "name":"Mom", "Password":"violin" },
-    { "name":"Elisha", "Password":"violin" },
-    { "name":"Peter", "Password":"violin" }
-  ]}
+{
+  "accounts": [
+    { "name": "Jaden", "Password": "violin" },
+    { "name": "Mom", "Password": "violin" },
+    { "name": "Elisha", "Password": "violin" },
+    { "name": "Peter", "Password": "violin" }
+  ]
+}
