@@ -12,26 +12,18 @@
     <link rel="stylesheet" href="/css/medium.css">
     <link rel="stylesheet" href="/css/large.css">
     <script src="/js/main.js" type="module"></script>
-    <script src="/js/accounts.js" type="module"></script>
+    <script src="/js/recordPractice.js" type="module"></script>
     <link rel="icon" type="image/x-icon" href="/images/violearn-icon.png">
-    <title>Login | VioLearn</title>
+    <title>Student | VioLearn</title>
   </head>
 
   <body>
-    <div id="login-bg"></div>
-    <div>
-      <form id="login" class="toggleOff" name="login" action="/index/">
-        <p id="account-header"></p>
-        <label for="accountPass">Password: <input name="accountPass" type="password" required></label>
-        <input id="loginButton" type="submit" value="Login">
-      </form>
-    </div>
     <div id="page-container">
       <div id="content-wrap">
         <header id="main-header"></header>
         <main>
-          <p id="accountsMessage"></p>
-          <div id="accounts"></div>
+            <div class="date"></div>
+            <section id="practiceRecord"></section>
         </main>
       </div>
       <footer id="main-footer"></footer>

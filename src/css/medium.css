@@ -8,7 +8,6 @@
         border-bottom-left-radius: 2em;
         border-bottom-right-radius: 2em;
         justify-content: space-between;
-        flex-direction: row;
     }
     footer {
         border-top-left-radius: 2em;
@@ -18,7 +17,15 @@
         margin: 0 2em;
     }
     nav{
-        min-width: 60%;
+        min-width: 70%;
+    }
+    nav ul {
+        flex-direction: row;
+      }
+
+    nav li {
+        width: unset;
+        margin: initial;
     }
 
 }

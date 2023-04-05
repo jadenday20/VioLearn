@@ -62,6 +62,7 @@ export async function loadHeaderFooter(){
   renderWithTemplate(header, indexHeader)
   renderWithTemplate(footer, indexFooter)
   document.getElementById("currYear").textContent = new Date().getFullYear();
+  document.getElementById("curraccount").innerHTML = getLocalStorage("account");
 }
 
 // set a listener for both touchend and click
