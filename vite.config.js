@@ -13,6 +13,7 @@ export default defineConfig({
         login: resolve(__dirname, "src/login/index.html"),
         sheet_music: resolve(__dirname, "src/sheet_music/index.html"),
         metronome: resolve(__dirname, "src/metronome/index.html"),
+        songs: resolve(__dirname, "src/songs/index.html"),
       },
     },
   },
