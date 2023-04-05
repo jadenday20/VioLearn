@@ -4,9 +4,9 @@ function songDetailsTemplate(song) {
     for (let i = 0; i < song.files.length; i++) {
         html += `<div class="songDetails"><h2>${song.files[i]}</h2><ul class="audioList">`
         for (let x = 0; x < song.audioFiles[i].length; x++){
-            html += `<li class="audio_li"><label>${song.audioFiles[i][x]}</label><audio controls><source src="/sheet_music/audio_files/${song.audioFiles[i][x]}.m4a" type="audio/mpeg"></source></audio></li>`;
+            html += `<li class="audio_li"><label>${song.audioFiles[i][x]}</label><audio controls><source src="/audio_files/${song.audioFiles[i][x]}.m4a" type="audio/mpeg"></source></audio></li>`;
         }
-        html += `</ul></div><iframe frameborder="0" src='/sheet_music/files/${song.files[i]}.pdf'></iframe>`
+        html += `</ul></div><iframe frameborder="0" src='/files/${song.files[i]}.pdf'></iframe>`
       }
     html += `</section>`;
     return html;
