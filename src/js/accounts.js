@@ -77,6 +77,8 @@ function displayAccount(account) {
     document
       .getElementById("login-bg")
       .removeEventListener("click", toggleLogin);
+      localStorage.removeItem("tempName");
+      localStorage.removeItem("tempaccountnum");
   }
 }
 

@@ -184,3 +184,32 @@ input[type="submit"] {
   line-height: 25px;
   margin: 1em auto 0 auto;
 }
+
+#sheet_music {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .5em;
+  background-color: var(--dark-purple);
+  border-radius: .5em;
+  padding: 1em 3em;
+}
+
+.song {
+  display: block;
+  background-color: var(--primary-color);
+  width: 100%;
+  max-width: 250px;
+  padding: .5em;
+  border-radius: .5em;
+  margin: auto;
+  text-align: center;
+}
+
+.song:hover {
+  background-color: var(--primary-hover);
+}
+
+.song a {
+  display: block;
+  color: white;
+}

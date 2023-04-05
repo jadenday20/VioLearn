@@ -27,4 +27,12 @@
     width: unset;
     margin: initial;
   }
+
+  #sheet_music {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .song {
+    max-width: 150px;
+  }
 }
