@@ -35,4 +35,9 @@
   .song {
     max-width: 150px;
   }
+  .song-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
 }

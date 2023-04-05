@@ -5,7 +5,9 @@
   --primary-color: #551a8b;
   --primary-hover: #652b9b;
   --secondary-color: #a1cf6b;
+  --white: #fafafa;
   --light-grey: #cbcbd4;
+  --dark-grey: #b8b9be;
   --dark-green: #3f612d;
   --dark-purple: #160f29;
 
@@ -42,6 +44,10 @@ main {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 h1,
@@ -109,7 +115,7 @@ nav li:hover,
 
 nav a,
 .account {
-  color: white;
+  color: var(--white);
   display: block;
   padding: 0.7em;
   width: 90px;
@@ -177,7 +183,7 @@ input[type="submit"] {
   cursor: pointer;
   background-color: var(--primary-color);
   border-radius: 8px;
-  color: white;
+  color: var(--white);
   display: block;
   padding: 0.1em;
   width: 75px;
@@ -189,7 +195,7 @@ input[type="submit"] {
   display: grid;
   grid-template-columns: 1fr;
   gap: .5em;
-  background-color: var(--dark-purple);
+  background-color: var(--dark-grey);
   border-radius: .5em;
   padding: 1em 3em;
 }
@@ -211,5 +217,15 @@ input[type="submit"] {
 
 .song a {
   display: block;
-  color: white;
+  color: var(--white);
+}
+
+iframe {
+  width: 250px;
+  height: 378.6px;
+}
+
+.audioList {
+  list-style-type: none;
+  padding: 0;
 }

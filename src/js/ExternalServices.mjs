@@ -14,19 +14,22 @@ function convertToJson(res) {
       this.url = url;
     }
     async getData(category) {
-        // await fetch(this.url)
-        // .then(function (response) {
-        //     return response.json();
-        // })
-        // .then(function (jsonObject) {
-        //     const data = jsonObject[category]
-        //     console.log(data)
-        //     return data;
-        // });
         const response = await fetch(this.url);
         const jsonObject = await convertToJson(response);
         const data = jsonObject[category];
         return data;
+    }
+    async findSongById(id) {
+      const response = await fetch(this.url);
+        const jsonObject = await convertToJson(response);
+        for (let i = 0; i < jsonObject["sheet_music"].length; i++) {
+          if (jsonObject["sheet_music"][i]["ID"] == id){
+            return jsonObject["sheet_music"][i];
+          }
+        }
+
+        // const data = jsonObject[category][id];
+        // return data;
     }
       
     }
