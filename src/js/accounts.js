@@ -6,10 +6,12 @@ function renderAccounts() {
   const accountsHTML = document.getElementById("accountsMessage");
   if (currAccount) {
     accountsHTML.innerHTML = `<p>Hi ${currAccount}!</p>
-                                  <p>Select from the accounts below to switch accounts</p>`;
+                              <button id="logout" name="logout" onclick="removeFromStorage('account')">Log Out</button>
+                              <p>Select from the accounts below to switch accounts</p>`;
+                              // document.getElementById("logout").addEventListener("click", setTimeout(() => {  removeFromStorage("account") }, 50));
   } else {
     accountsHTML.innerHTML =
-      "<p>Please select from the accounts below to log in</p>";
+      "<p>Please select from the accounts below to log in.</p><p>For now all of the passwords are set to 'violin'</p>";
   }
 }
 
@@ -52,10 +54,6 @@ function displayAccount(account) {
   newAccountButton.name = account.name;
   newAccountButton.accountnum = getLocalStorage("accountnum");
   newAccountButton.innerHTML = account.name;
-  // const newAccount =
-  // `<button class='account' onclick='login(${account.name})'>
-  // ${account.name}
-  // </button>`;
   accountsHTML.appendChild(newAccountButton);
 
   function login(accountName) {

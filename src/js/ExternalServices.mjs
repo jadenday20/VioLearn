@@ -31,5 +31,17 @@ function convertToJson(res) {
         // const data = jsonObject[category][id];
         // return data;
     }
+    async findAssignmentsByStudent(studentName) {
+      const response = await fetch(this.url);
+      const jsonObject = await convertToJson(response);
+      const assignments = jsonObject["assignmnets"];
+      const clone = structuredClone(assignments);
+      for (let i in assignments) {
+        if (!assignments[i]["assignedStudents"].includes(studentName)){
+          delete clone[i];
+        }
+      }
+      return clone;
+    }
       
     }

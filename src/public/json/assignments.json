@@ -2,20 +2,35 @@
   "assignmnets": [
     {
       "name": "Scales",
-      "assignedStudents": ["Peter", "Mom", "Elisha"],
+      "song": "",
+      "songID": "",
+      "assignedStudents": ["Peter"],
       "audioFiles": [],
       "videoFiles": [],
-      "notes": ""
+      "notes": "2 octave G scales. Pick a different rhythm each time."
+    },
+    {
+      "name": "Scales",
+      "song": "",
+      "songID": "",
+      "assignedStudents": ["Mom", "Elisha"],
+      "audioFiles": [],
+      "videoFiles": [],
+      "notes": "2 octave D scales in 3rd position."
     },
     {
       "name": "I am a Child of God",
+      "song": "I am a Child of God",
+      "songID": 3,
       "assignedStudents": ["Peter", "Mom"],
-      "audioFiles": [],
+      "audioFiles": ["I_am_a_Child_of_God", "Child_of_God_Violin_counting", "Child_of_God_Piano_counting"],
       "videoFiles": [],
-      "notes": ""
+      "notes": "Practice with the audio files."
     },
     {
       "name": "Go the Distance",
+      "song": "Go the Distance",
+      "songID": 4,
       "assignedStudents": ["Peter", "Mom", "Elisha"],
       "audioFiles": [],
       "videoFiles": [],
