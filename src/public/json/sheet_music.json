@@ -27,7 +27,7 @@
       {
         "name": "Go the Distance",
         "ID": 4,
-        "audioFiles": [["go_the_distance"]],
+        "audioFiles": [["Go_the_Distance"]],
         "videoFiles": [],
         "files": ["Go_the_Distance"],
         "notes": ""

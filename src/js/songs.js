@@ -7,6 +7,6 @@ const songId = getParam("song");
 
 const dataSource = new ExternalServices(baseURL);
 
-const product = new songDetails(songId, dataSource);
+const song = new songDetails(songId, dataSource);
 
-product.init();
+song.init();

@@ -100,27 +100,30 @@ nav ul {
 }
 
 nav li,
-.account {
+.account, #logout {
   background-color: var(--primary-color);
   border-radius: 8px;
-  /* padding: .7em;
-  border-radius: 8px; */
   display: inline-block;
 }
 
 nav li:hover,
-.account:hover {
+.account:hover, #logout:hover {
   background-color: var(--primary-hover);
 }
 
 nav a,
-.account {
+.account, #logout {
   color: var(--white);
   display: block;
   padding: 0.7em;
-  width: 90px;
+  width: 125px;
   line-height: 25px;
   text-align: center;
+}
+
+#logout {
+  cursor: pointer;
+  font-size: var(--font-base);
 }
 nav a {
   margin: auto;
@@ -220,7 +223,7 @@ input[type="submit"] {
   color: var(--white);
 }
 
-iframe {
+.song-detail iframe {
   width: 250px;
   height: 378.6px;
 }
@@ -228,4 +231,22 @@ iframe {
 .audioList {
   list-style-type: none;
   padding: 0;
+}
+
+.audioList audio {
+  display: block;
+  margin: .5em 0 .75em;
+}
+
+.assignments-detail h2{
+  margin-bottom: .25em;
+}
+.assignments-detail p {
+  margin: 0 0 1em 0;
+  font-size: var(--small-font);
+}
+.detailLink {
+  color: #3f612d;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
